@@ -1,0 +1,43 @@
+<template name="listOfKente">
+	This section is to show all the list of kente in the system
+
+	
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		Add Kente
+	</button>
+
+	
+
+	<div class="container">
+		<div class="row">
+			<!-- Card Projects -->
+			{{#each kentes}}
+			<div class="col-md-6 col-md-offset-3">
+				<div class="card">
+					<div class="card-image">
+						{{#with FS.GetFile 'images' picture}}
+						<img class="img-thumbnail" width="560px" height="500px" src="{{this.url}}" alt="" >
+						<span class="card-title">{{kenteName}}</span>
+						{{/with}}
+					</div>
+
+					<div class="card-content">
+						<p>{{description}}</p>
+
+					</div>
+
+					<div class="card-action">
+						<!-- <i class="fa fa-envelope-o"></i><a href="" target="new_blank"></a> -->
+						<a href="#">{{email}}</a>
+						<a href="#" target="new_blank">{{phoneNo}}</a>
+						<a href="#" target="new_blank">{{location}}</a>
+						<a href="#" target="new_blank">Link</a>
+					</div>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+
+</template>

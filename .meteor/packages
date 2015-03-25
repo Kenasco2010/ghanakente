@@ -1,0 +1,19 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+autopublish
+insecure
+iron:router
+twbs:bootstrap
+fortawesome:fontawesome
+cfs:ui
+cfs:autoform
+aldeed:autoform@=4.2.2
+aldeed:collection2@=2.3.1
+cfs:gridfs@=0.0.27
+cfs:standard-packages
+yogiben:autoform-file@=0.2.0
